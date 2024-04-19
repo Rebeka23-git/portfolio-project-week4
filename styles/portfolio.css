@@ -1,7 +1,48 @@
-p {
-  font-family: "Times New Roman", Times, serif;
-}
-h1 h2 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+:root {
+  --branding-color: #c5cbce;
+  --primary-color: black;
+  --secondary-color: white;
+  --heading-font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --default-font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  font-family: var(--default-font-family);
+}
+h1 h2 h3 {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+h1 {
+  font-size: 96px;
+}
+h2 {
+  font-size: 60px;
+}
+h3 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 2;
+}
+p {
+  font-size: 20px;
+}
+.hero {
+  margin: 0;
+  background-color: var(--branding-color);
+  text-align: center;
+  padding: 160px 0;
+}
+.btn-branding {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 27px;
+  padding: 12px 20px;
+}
+.btn-branding:hover {
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
 }
