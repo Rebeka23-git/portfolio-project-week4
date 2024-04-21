@@ -6,8 +6,7 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   --default-font-family: "Times New Roman", Times, serif;
 }
-
-p {
+h4 {
   font-family: var(--default-font-family);
 }
 h1 h2 h3 {
@@ -16,6 +15,7 @@ h1 h2 h3 {
 }
 h1 {
   font-size: 96px;
+  line-height: 1.5;
 }
 h2 {
   font-size: 60px;
@@ -23,10 +23,14 @@ h2 {
 h3 {
   margin: 0;
   font-size: 30px;
-  line-height: 2;
+  line-height: 1.5;
+}
+h4 {
+  font-size: 20px;
 }
 p {
-  font-size: 20px;
+  font-family: var(--default-font-family);
+  font-size: 16px;
 }
 .hero {
   margin: 0;
@@ -45,4 +49,42 @@ p {
 .btn-branding:hover {
   border: 2px solid var(--primary-color);
   cursor: pointer;
+}
+
+.btn-branding-outline {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 27px;
+  padding: 8px 16px;
+  text-align: center;
+}
+.btn-branding-outline:hover {
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+.picture-height {
+  margin-top: 80px;
+  margin-left: 80px;
+}
+.training-description {
+}
+@media (max-width: 960px) {
+  .training-description {
+    padding: 0;
+    text-align: center;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .hero {
+    padding: 80px 0;
+  }
+}
+img {
+  border-radius: 2px;
+}
+.row {
+  background-color: #c5cbce;
 }
