@@ -137,3 +137,38 @@ nav ul {
 nav {
   padding: 20px;
 }
+footer {
+  margin: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+footer .contact-box {
+  background-color: var(--branding-color);
+  padding: 30px;
+  border-radius: 2px;
+}
+footer .contact-box p {
+  margin: 0;
+}
+footer .email-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 24px;
+  text-align: center;
+}
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--secondary-color);
+  background: var(--branding-color);
+  padding: 10px;
+  font-size: 18px;
+  transition: all 150ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: var(--secondary-color);
+  background: var(--secondary-color);
+}
